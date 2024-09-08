@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab-1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table {
+                width: 50%;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            h2 {
+                background-color: lightblue;
+                color: rgb(67, 111, 165);
+            }
+            input[type="text"] {
+                padding: 5px;
+                margin: 5px 0;
+                width: 10%;
+            }
+            input[type="submit"] {
+                background-color: #4682B4;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            input[type="submit"]:hover {
+                background-color: #4169E1;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div style="width: 1000px; margin: 10px; background-color: #ffffff;">
+            <h1>Dog D. Dog</h1>
+        </div>
+        <div class="content">
+            <div>
+                <h2> About 
+                    <div>
+                        <img src="https://i.guim.co.uk/img/media/003f5259bcdb7510b311c08f283584e7782170ee/0_446_4032_2419/master/4032.jpg?width=1900&dpr=2&s=none" alt="hello" top="10%" width="40%" align="right">
+                    </div>
+                </h2>
+                <p>Woof woof!</p>
+                <p>Hi, I'm Dog. I love <strong style="color: rgb(144, 165, 219)"> User Interface Design</strong>.</p>
+            </div>
+            <div>
+                <h2>Courses</h2>
+                <p>Here are some courses I've taken:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Number</th>
+                            <th>Course Title</th>
+                            <th>Semester Taken</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <th colspan="3">For Credit</th>
+                        </tr>
+                        <tr style="color:hsl(215, 47%, 49%)">
+                            <td><b>6.813</b></td>
+                            <td>Use Interface Design</td>
+                            <td>Spring 2014</td>
+                        </tr>
+                        <tr>
+                            <td style="color:#4169E1"><b>6.034</b></td>
+                            <td>Artificial Intelligence</td>
+                            <td>Fall 2013</td>
+                        </tr>
+                        <tr>
+                            <td style="color:#4169E1"><b>6.006</b></td>
+                            <td>Introduction to Algorithms</td>
+                            <td>Fall 2013</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Listener</th>
+                        </tr>
+                        <tr>
+                            <td style="color:#4169E1"><b>6.867</b></td>
+                            <td>Machine Learning</td>
+                            <td>Fall 2013</td>
+                        </tr>
+                        <tr>
+                            <td style="color:#4169E1"><b>6.830</b></td>
+                            <td>Database Systems</td>
+                            <td>Fall 2012</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h2>Interests</h2>
+                <p>I am interested in <strong>HCI</strong>, memes, and YouTube videos.</p>
+            </div>
+            <div>
+                <h2>Submit Pet Information</h2>
+                <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+                <form>
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="mname">Phylum:</label>
+                    <input type="text" id="mname" name="mname"><br>
+                    <label for="lname">Gender:</label>
+                    <input type="text" id="lname" name="lname"><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

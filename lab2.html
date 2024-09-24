@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab-1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color:white ;
+            }
+            .container{
+                width: 90%;
+                background-color: white;
+                margin: 0 auto ;
+            }
+            .header h1{
+                margin-top: 0;
+            }
+            .header{
+                padding: 10px;
+            }
+            .block{
+                padding: 10px;
+                position: relative;
+            }
+            .title{
+                background-color: lightblue;
+                color: rgba(30, 59, 141, 0.559);
+                line-height: 40px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .image{
+                position: absolute;
+                right:10px;
+                top:10px;
+                z-index: 1;
+            }
+            .style1{
+                color: blue;
+                font-weight: bold;
+            }
+            .tableinfor{
+                font-size: 20px;
+            }
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                font-size: large
+            }
+            table{
+                width: 40%;
+            }
+            .xam{
+                background-color: rgb(202, 202, 202);
+            }
+            input[type="text"] {
+            padding: 5px;
+            margin: 5px 0;
+            width: 10%;
+        }
+            input[type="submit"] {
+            background-color: #4682B4;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+            input[type="submit"]:hover {
+            background-color: #4169E1;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Dog D.Dog</h1>
+            </div>
+            <div class="block">
+                <div class="title">About</div>
+                <div class="content">
+                    <p>Woof woof!</p>
+                    <p>Hi,I'm Dog. I love <span><b style="color: #4682B4;">User Interface Design.</b></span></p>
+                    <img src="https://www.jsonline.com/gcdn/presto/2020/01/02/PMJS/4cbf91ff-57be-4b4c-9940-415efab0e881-CNI_bk_PUPPYPLAY8_0107_PZ_M.JPG?width=300&height=329&fit=crop&format=pjpg&auto=webp" alt="Dog" class="image" width="200px">
+                </div>
+            </div>
+            <div class="block" class="tableinfor">
+                <div class="title">Courses</div>
+                    <p>Here are some courses I've taken:</p>
+                <div class="content">
+                    <table border="1" wigth="450">
+                        <tr>
+                            <th>Course Number</th>
+                            <th>Course Title</th>
+                            <th>Semester Taken</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">For credit</th>
+                        </tr>
+                        <tr class="xam">
+                            <td class="style1">6.813</td>
+                            <td style="color: rgb(74, 117, 188);">User Interface Design</td>
+                            <td style="color:  rgb(74, 117, 188);">Spring 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">6.034</td>
+                            <td>Artificial Intelligence</td>
+                            <td>Fall 2013</td>
+                        </tr>
+                        <tr class="xam">
+                            <td class="style1" >6.006</td>
+                            <td>Introduction to Algorithms</td>
+                            <td>Fall 2013</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Listener</th>
+                        </tr>
+                        <tr class="xam">
+                            <td style="color: rgb(74, 117, 188);"><b>6.876</b></td>
+                            <td>Machine Learning</td>
+                            <td>Fall 2013</td>
+                        </tr>
+                        <tr>
+                            <td style="color: rgb(74, 117, 188);"><b>6.830</b></td>
+                            <td>Database Systems</td>
+                            <td>Fall 2012</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="block">
+                <div class="title">Interests</div>
+                <div class="content">
+                    <p>I am interested <strong>HCI</strong>, memes and youtube videos.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="title">Submit Pet Information</div>
+                <div class="content">
+                    <p>Would love to know what kinds of pets you 'own'(you'll never own me). Submit below!</p>
+                    <form>
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="mname">Phylum:</label>
+                        <input type="text" id="mname" name="mname"><br>
+                        <label for="lname">Gender:</label>
+                        <input type="text" id="lname" name="lname"><br>
+    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

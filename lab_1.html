@@ -5,24 +5,61 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            table{
-                width: 50%;
-                size: ;
+            body{
+                background-color:white ;
             }
-            table, th,td{
-                border: 1px solid black;
-                border-collapse: collapse;
+            .container{
+                width: 90%;
+                background-color: white;
+                margin: 0 auto ;
             }
-            h2{
+            .header h1{
+                margin-top: 0;
+            }
+            .header{
+                padding: 10px;
+            }
+            .block{
+                padding: 10px;
+                position: relative;
+            }
+            .title{
                 background-color: lightblue;
-                color:rgb(67, 111, 165);
+                color: rgba(30, 59, 141, 0.559);
+                line-height: 40px;
+                font-size: 25px;
+                font-weight: bold;
             }
-        input[type="text"] {
+            .image{
+                position: absolute;
+                right:10px;
+                top:10px;
+                z-index: 1;
+            }
+            .style1{
+                color: blue;
+                font-weight: bold;
+            }
+            .tableinfor{
+                font-size: 20px;
+            }
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                font-size: large
+            }
+            table{
+                width: 40%;
+            }
+            .xam{
+                background-color: rgb(202, 202, 202);
+            }
+            input[type="text"] {
             padding: 5px;
             margin: 5px 0;
             width: 10%;
         }
-        input[type="submit"] {
+            input[type="submit"] {
             background-color: #4682B4;
             color: white;
             padding: 10px;
@@ -30,89 +67,91 @@
             cursor: pointer;
             border-radius: 5px;
         }
-        input[type="submit"]:hover {
+            input[type="submit"]:hover {
             background-color: #4169E1;
         }
         </style>
     </head>
     
-    <body>
-        <div style="width: 1000px;; margin: 10; background-color: #ffffff;" >
-        
-            <h1>Dog D. Dog </h1>
-        </div>
-        <div class="content">
-            <div>
-                <h2> About <div>
-                    <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_640.jpg" alt="hello" width="20%"  align="right">
-                </div></h2>
-                    
-                <p>Woof woof!</p>
-                <p>Hi, I'm Dog. I love <strong style="color: rgb(144, 165, 219)"> User Interface Design</strong>.</p>
-            </div>
-            <div>
-                <h2>Courses</h2>
-                <p>Here are some courses I've taken:</p>
-                <table>
-                    <thead>
-                        <th>Course Number</th>
-                        <th>Course Title</th>
-                        <th>Semester Taken</th>
-                    </thead>
-                   <thead>
-                    <th colspan="3">For Credit</th>
-                   </thead>
-                    <tbody> 
-                        <tr style="color:hsl(215, 47%, 49%)">
-                            <td><b>6.813</b></td>
-                            <td>Use Interface Design</td>
-                            <td>Spring 2014</td>
+    <body>  
+        <div class="container">
+            <div class="header">
+                <h1>Dog D.Dog</h1>
+            </div>  
+            <div class="block">
+                <div class="title">About</div>
+                <div class="content">
+                    <p>Woof woof!</p>
+                    <p>Hi,I'm Dog. I love <span><b style="color: #4682B4;">User Interface Design.</b></span></p>
+                    <img src="https://www.jsonline.com/gcdn/presto/2020/01/02/PMJS/4cbf91ff-57be-4b4c-9940-415efab0e881-CNI_bk_PUPPYPLAY8_0107_PZ_M.JPG?width=300&height=329&fit=crop&format=pjpg&auto=webp" alt="Dog" class="image" width="200px">
+                </div>  
+            </div>  
+            <div class="block" class="tableinfor">
+                <div class="title">Courses</div>
+                    <p>Here are some courses I've taken:</p>
+                <div class="content">
+                    <table border="1" wigth="450">
+                        <tr>  
+                            <th>Course Number</th>
+                            <th>Course Title</th>
+                            <th>Semester Taken</th>
                         </tr>
                         <tr>
-                            <td style="color:#4169E1"><b>6.034</b></td>
+                            <th colspan="3">For credit</th>
+                        </tr>
+                        <tr class="xam">
+                            <td class="style1">6.813</td>
+                            <td style="color: rgb(74, 117, 188);">User Interface Design</td>
+                            <td style="color:  rgb(74, 117, 188);">Spring 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">6.034</td>
                             <td>Artificial Intelligence</td>
                             <td>Fall 2013</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#4169E1"><b>6.006</b></td>
-                            <td>INtroduction to Algorihms</td>
+                        </tr>                        
+                        <tr class="xam">
+                            <td class="style1" >6.006</td>
+                            <td>Introduction to Algorithms</td>
                             <td>Fall 2013</td>
-                        </tr>
-                        <thead>
+                        </tr>                        
+                        <tr>                        
                             <th colspan="3">Listener</th>
-                        </thead>
-                        <tr>
-                            <td style="color:#4169E1"><b>6.867</b></td>
+                        </tr>                        
+                        <tr class="xam">
+                            <td style="color: rgb(74, 117, 188);"><b>6.876</b></td>
                             <td>Machine Learning</td>
                             <td>Fall 2013</td>
-                        </tr>
-                        <tr>
-                            <td style="color:#4169E1"><b>6.830</b></td>
+                        </tr>                      
+                        <tr>                      
+                            <td style="color: rgb(74, 117, 188);"><b>6.830</b></td>
                             <td>Database Systems</td>
                             <td>Fall 2012</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <h2>Interests</h2>
-                <p>I am interested <strong>HCI</strong>, memes and youtube videos.</p>
-            </div>
-            <div>
-                <h2>Submit Pet Information</h2>
-                <p>Would love to know what kinds of pets you 'own'(you'll never own me). Submit below!</p>
-                <form>
-                    <label for="fname">Name:</label>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="mname">Phylum:</label>
-                    <input type="text" id="mname" name="mname"><br>
-                    <label for="lname">Gender:</label>
-                    <input type="text" id="lname" name="lname"><br>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-        </div>
-    </body>
-</html>
+                        </tr>                      
+                    </table>                      
+                </div>                        
+            </div>                        
+            <div class="block">
+                <div class="title">Interests</div>
+                <div class="content">
+                    <p>I am interested <strong>HCI</strong>, memes and youtube videos.</p>
+                </div>                                
+            </div>                                
+            <div class="block">
+                <div class="title">Submit Pet Information</div>
+                <div class="content">
+                    <p>Would love to know what kinds of pets you 'own'(you'll never own me). Submit below!</p>
+                    <form>                                
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="mname">Phylum:</label>
+                        <input type="text" id="mname" name="mname"><br>
+                        <label for="lname">Gender:</label>
+                        <input type="text" id="lname" name="lname"><br>
+    
+                        <input type="submit" value="Submit">
+                    </form>                                
+                </div>                                
+            </div>                                
+        </div>                                
+    </body>                                
+</html>                                  
